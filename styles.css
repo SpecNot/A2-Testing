@@ -1,0 +1,46 @@
+body{
+    background-color: #f0f2f3;
+}
+
+.flex-container {
+padding: 0;
+margin: 0;
+list-style: none;
+-ms-box-orient: horizontal;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -moz-flex;
+display: -webkit-flex;
+display: flex;
+ -webkit-flex-wrap: wrap; 
+flex-wrap: wrap; 
+margin: 0% 0%;
+align-items:flex-start;
+justify-content: center;
+font-family: "Maven Pro";
+}
+
+.main{
+    text-align: center;
+}
+
+
+
+.card{ 
+width: 12.5em;
+margin: 1em;
+padding: 0.5em;
+background-color: white;
+text-align: center;
+overflow:hidden;
+} 
+
+
+
+@media (max-width: 1200px) {
+.flex-container {
+margin: 0% 0px;
+}
+}
+
