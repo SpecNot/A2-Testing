@@ -28,3 +28,11 @@ function makeNewCard(message) {
 }
 
 
+const userAction = async () => {
+    const response = await fetch('https://vqxs45e0r0.execute-api.us-east-2.amazonaws.com/getSent',{mode: 'cors'});
+    const myJson = await response.json(); //extract JSON from the http response
+    // do something with myJson
+    console.log(myJson)
+  }
+
+  userAction()
