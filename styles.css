@@ -1,5 +1,6 @@
 body{
-    background-color: #f0f2f3;
+    background-color: #ffc99d
+    ;
 }
 
 .flex-container {
@@ -19,8 +20,9 @@ margin: 0% 0%;
 align-items:center;
 justify-content: center;
 font-family: "Maven Pro";
-
 }
+
+
 
 .main{
 text-align: center;
@@ -31,15 +33,23 @@ margin-right: -50%;
 transform: translate(-50%, -50%) ;
 }
 
+.ipt{
+
+    min-height: 48px;
+    line-height: 20px;
+
+}
+
 
 
 .card{ 
 width: 12.5em;
 margin: 1em;
 padding: 1em;
-background-color: white;
+background-color: #ff7e26;
 text-align: center;
 overflow:hidden;
+color: white;
 } 
 
 
