@@ -1,6 +1,5 @@
 body{
-    background-color: #ffc99d
-    ;
+    background-color: #defbff;
 }
 
 .flex-container {
@@ -46,10 +45,10 @@ transform: translate(-50%, -50%) ;
 width: 12.5em;
 margin: 1em;
 padding: 1em;
-background-color: #ff7e26;
+background-color: #292929;
 text-align: center;
 overflow:hidden;
-color: white;
+color: #ffffff;
 } 
 
 
