@@ -7,7 +7,7 @@
 //             makeNewCard(data.sentence[x])
 //         }
 //     });
-
+let comments = []
 
 function submitForm(event) {
     event.preventDefault();
@@ -32,29 +32,61 @@ const getSent = async () => {
     const response = await fetch('https://vqxs45e0r0.execute-api.us-east-2.amazonaws.com/getSent',{mode: 'cors'});
     const myJson = await response.json(); //extract JSON from the http response
     // do something with myJson
-    for(x = 0; x < myJson.sentence.length; x++){
+
+    if(comments.length == 0){
+      for(x = 0; x < myJson.sentence.length; x++){
         // console.log(data.sentence)
         makeNewCard(myJson.sentence[x])
     }
-    console.log(myJson.sentence)
+      comments = myJson.sentence
+    }
+    else{
+
+      myArray = myJson.sentence.filter( ( el ) => !comments.includes( el ) );
+      if (myArray.length == 0){
+        return
+      }
+      for(x = 0; x < myArray.length; x++){
+        // console.log(data.sentence)
+        makeNewCard(myArray[x])
+    }
+    comments = myJson.sentence
+      console.log(myArray)
+      // console.log("this works")
+    }
+
+
+
+
+    // console.log(comments)
+    // console.log(myJson.sentence)
   }
 
   getSent()
 
 
-  const postSent = async () => {
-    const response = await fetch('https://vqxs45e0r0.execute-api.us-east-2.amazonaws.com/postSent', {
-      method: 'POST',
-      body: JSON.stringify({
-        "sentence": "The weather is nice today.21321312fuckme"
-    }), 
-      headers: {
-        'Content-Type': 'text/plain',
-        // "Accept-Encoding": "gzip, deflate, br"
-      }
-    });
-    const myJson = await response.json(); //extract JSON from the http response
-    console.log(myJson)
-    // do something with myJson
-  }
+  // const postSent = async () => {
+  //   const response = await fetch('https://vqxs45e0r0.execute-api.us-east-2.amazonaws.com/postSent', {
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       "sentence": "The weather is nice today.21321312fuckme"
+  //   }), 
+  //     headers: {
+  //       'Content-Type': 'text/plain',
+  //       // "Accept-Encoding": "gzip, deflate, br"
+  //     }
+  //   });
+  //   const myJson = await response.json(); //extract JSON from the http response
+  //   console.log(myJson)
+  //   // do something with myJson
+  // }
 
+
+
+
+  window.setInterval(function() {
+    // do stuff
+    getSent()
+    console.log("refresh")
+
+  }, 10000); // 1000 milliseconds (1 second)
