@@ -17,7 +17,7 @@
     </div>
 
 
-    <div class="slideshow-container">
+    <div class="slideshow-container" style="height: 440px;"> 
 
         <div class="mySlides fade">
             <img src="./images/intro1.svg" style=" height: 300px;">
@@ -43,21 +43,49 @@
             </div>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="mySlides fade" id="location">
+            <h1>Which Area Are You Located?</h1>
+            <p>Select Area</p>
+            <select name="location" id="location-select">
+                <option value="volvo">Penrith</option>
+              </select>
+            <h2>Your Location</h2>
+
+            <img src="./images/map.png" >
+
+        </div>
+
+        <div class="mySlides fade" id="username">
+            <h1>Time To Generate Your Username!</h1>
+            <img src="./images/intro5.svg" style="height: 200px;">
+
+            <div class="name-area">
+                <p>You Are:</p>
+                <h2>Helpful Sloth</h2>
+                <button class="button-wide-name"><b>Generate New Name</b></button>
+
+            </div>
+
+            
+
+        </div>
+
 
     </div>
     <br>
 
-    <div class="dot-box" style="text-align:center">
+    <div class="dot-box" style="text-align:center; height: 40px;">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+
     </div>
 
 
     
-    <button class="button-wide" onclick="plusSlides(1)"><b>Continue</b></button>
+    <button class="button-wide" id="main-button" onclick="plusSlides(1)"><b>Continue</b></button>
 
 
 

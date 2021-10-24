@@ -2,27 +2,85 @@
     box-sizing: border-box
 }
 
+h1{
+    margin: 0;
+}
+
+button{
+    font-weight: bold;
+}
+
+#location{
+    padding-top: 16px;
+    text-align: center;
+}
+
+.name-area{
+    text-align: center;
+}
+
+#username{
+    padding-top: 16px;
+    text-align: center;
+}
+
+#location-select{
+    padding-left: 6px;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+
+select option{
+    background-color: tomato;
+}
+
 body {
     font-family: 'Lato';
     margin: 16px 16px;
     background-color: #F0F7F7;
     text-align: center;
+    color: #2E3B4C;
 }
 
 .button-wide{
-    width: 160px;
+    width: 200px;
     height: 40px;
     border: none;
     background-color: #597393;
     color: white;
     border-radius: 6px;
     transition: all 0.4s;
-    
 }
+
+
+
 .button-wide:hover{
     background-color: #252e3a;
     color: #97c1f3 ;
     transition: all 0.4s;
+    cursor: pointer;
+}
+
+.button-wide-name{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #a6c6dd;
+    color: #2E3B4C;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+
+.button-wide-name:hover{
+    background-color: #252e3a;
+    color: #97c1f3 ;
+    transition: all 0.4s;
+    cursor: pointer;
+
 }
 
 
@@ -149,16 +207,6 @@ img {
     }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
 
 
 
@@ -177,8 +225,26 @@ img {
     .button-wide{
         width: 100%;
     }
+    
+    .button-wide-name{
+        width: 100%;
+    }
 
+    #location-select{
 
+        width: 100%;
+    }
+
+    #location{
+        text-align: left;
+    }
+    #username{
+        text-align: left;
+    }
+
+    #location img{
+        width: 100%;
+    }
 
 
 }
