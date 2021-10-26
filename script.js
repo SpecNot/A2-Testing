@@ -38,3 +38,23 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+var svgContainer = document.getElementById('svgContainer');
+
+var svgTest = bodymovin.loadAnimation({
+  wrapper: svgContainer,
+  animType: 'svg',
+  loop: true,
+  path: './doodanimation.json',
+  onclick: testF()
+});
+
+svgTest.addEventListener("click", function(){
+  console.log("clicked2")
+})
+
+function testF(){
+  console.log("clicked")
+}
