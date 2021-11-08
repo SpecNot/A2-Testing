@@ -156,7 +156,7 @@ var player_again = document.getElementById('player_again');
 
 function finalSlide(){
   playerAnswer =  document.getElementById("answer")
-
+  localStorage.setItem("answer", playerAnswer.value)
   playerName = document.getElementById("player_name")
   playerName.innerHTML = localStorage.getItem('name')
   playerAnswerArea = document.getElementById("player_answer")

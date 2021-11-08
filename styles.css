@@ -277,8 +277,9 @@ img {
     height: 100px;
 }
 #caption{
+    display: none;
     position: absolute; 
-    height: 200px; 
+    /* height: 200px;  */
     /* background-color: red;  */
     z-index: 1;
     width: 92%;
@@ -286,8 +287,10 @@ img {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     background-color: rgba(255, 255, 255, .15);
     border: solid 2px #DADADA;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     padding: 0 1em;
+    opacity: 0;
+    transition: all ease 1s;
 } 
 
 #players_canvas{
