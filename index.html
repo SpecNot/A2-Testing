@@ -10,40 +10,44 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- <script src="https://labs.nearpod.com/bodymovin/demo/markus/halloween/lt.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js" integrity="sha512-G1R66RZMhyLDEcAu92/Kv4sWNypnEiJcM6yhe0PNyiYDaMAKpMrJ6ZLR67xC/RMNGRa8Pm9TxtO8a98F6Ct+Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"
+        integrity="sha512-G1R66RZMhyLDEcAu92/Kv4sWNypnEiJcM6yhe0PNyiYDaMAKpMrJ6ZLR67xC/RMNGRa8Pm9TxtO8a98F6Ct+Gw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
 <body>
-    <div id="svgContainer" >
-
-    </div>
+    <!-- <div id="svgContainer" class="lottie" onclick="testF()" ></div> -->
     <!-- <lottie-player id="svgTester" src="./animation1.json"  background="#000000"  speed="1"  autoplay></lottie-player> -->
 
     <div class="header">
-        <img src="./images/logo.svg" alt="Logo">
+        <!-- <img src="./back.svg" alt="back"> -->
+
+        <img src="./logo.svg" alt="Logo">
+    </div>
+    <div class="intro">
+        <div id="lottie_load" class="lottie"></div>
+        <h2>Give us a moment...</h2>
+
+        <!-- <img src="./images/intro1.svg" style=" height: 300px;"> -->
+
     </div>
 
-
-    <div class="slideshow-container" style="height: 440px;"> 
+    <div class="slideshow-container" style="height: 440px;">
 
         <div class="mySlides fade">
-            <img src="./images/intro1.svg" style=" height: 300px;">
+            <lottie-player src="./animation/doodanimation.json" speed="1" loop style="height: 300px" autoplay></lottie-player>
+            <!-- <div id="svgContainer" class="lottie"></div> -->
+
             <div class="captionBox">
-                <h2>1. Welcome To Mindful!</h2>
-                <p>Engage in conversation with your local community, share your thoughts with the world!</p>
+                <h2>Welcome to Babbl!</h2>
+                <p>Engage in conversation with your local community. Complete daily questions & discussions.</p>
             </div>
         </div>
-
+        <!-- 
         <div class="mySlides fade">
-            <img src="./images/intro2.svg" style="height: 300px;">
-            <div class="captionBox">
-                <h2>2. Connect With Your Local Community</h2>
-                <p>Engage in conversation with your local community, share your thoughts with the world!</p>
-            </div>
-        </div>
+            <div id="lottie_load" class="lottie" ></div>
 
-        <div class="mySlides fade">
             <img src="./images/intro3.svg" style="height: 300px;">
             <div class="captionBox">
                 <h2>3. Begin Conversations</h2>
@@ -72,17 +76,17 @@
                 <h2>Helpful Sloth</h2>
                 <button class="button-wide-name"><b>Generate New Name</b></button>
 
-            </div>
+            </div> -->
 
-            
 
-        </div>
+
+    </div>
 
 
     </div>
     <br>
 
-    <div class="dot-box" style="text-align:center; height: 40px;">
+    <div class="dot-box" style="text-align:center; height: 40px; display: none;">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -92,10 +96,11 @@
     </div>
 
 
-    
-    <button class="button-wide" id="main-button" onclick="plusSlides(1)"><b>Continue</b></button>
 
-
+    <!-- <button class="button-wide" id="main-button" onclick="plusSlides(1)"><b>Continue</b></button> -->
+    <form action="./customisation.html">
+        <button class="button-wide" id="main-button"><b>Continue</b></button>
+    </form>
 
 
 

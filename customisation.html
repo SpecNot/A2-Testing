@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babbl</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="https://labs.nearpod.com/bodymovin/demo/markus/halloween/lt.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"
+        integrity="sha512-G1R66RZMhyLDEcAu92/Kv4sWNypnEiJcM6yhe0PNyiYDaMAKpMrJ6ZLR67xC/RMNGRa8Pm9TxtO8a98F6Ct+Gw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <div class="header" style="height:50px">
+        <img src="./back.svg" alt="back" id="back-button" onclick="plusSlides(-1)">
+
+        <img src="./logo.svg" alt="Logo" id="logo">
+    </div>
+
+    <div class="dot-box" style="text-align:center; height: 40px; margin-top: 2EM;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+
+    </div>
+    
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" style="display: block;">
+
+            <h1>First, Lets Customise Your Babbler!</h1>
+            <!-- <div id="svgContainer" class="lottie" onclick="testF()" style="height: 300px;"></div> -->
+            <img src="./doods/green.svg" alt="dood" id="customDood" style="margin-top: 2em;">
+            <!-- <lottie-player id="customDood" src="./animation/red.json"  speed="1"  autoplay></lottie-player> -->
+            <!-- <div id="player_select" class="lottie"></div> -->
+
+            <h2 id="color-text">Green</h2>
+            <div id="color-selectors">
+                <button class="color-buttons" id="color-button-green" onclick="doodChange('green',this)"></button>
+                <button class="color-buttons" id="color-button-red" onclick="doodChange('red',this)"></button>
+                <button class="color-buttons" id="color-button-yellow" onclick="doodChange('yellow',this)"></button>
+                <button class="color-buttons" id="color-button-orange" onclick="doodChange('orange',this)"></button>
+                <button class="color-buttons" id="color-button-blue" onclick="doodChange('blue',this)"></button>
+                <button class="color-buttons" id="color-button-blue_d" onclick="doodChange('blue_d',this)"></button>
+                <button class="color-buttons" id="color-button-purple" onclick="doodChange('purple',this)"></button>
+            </div>
+            <p>Don’t worry too much about picking the wrong colour, you are free to change it at any time.</p>
+
+            <button class="button-wide" id="main-button" onclick="plusSlides(1)"><b>Next</b></button>
+
+        </div>
+        <div class="mySlides fade">
+
+            <h1>Next, Lets Get Your Name And Where You’re From!</h1>
+            <div id="location">
+                <p> <b>My Name Is</b></p>
+                <form onsubmit="event.preventDefault()" id="nameForm">
+                    <input type="text" id="customName" onkeyup="success()"> </input>
+                    <p><b>I Am From</b></p>
+                    <select name="location" id="location-select">
+                        <option value="volvo">Penrith</option>
+                    </select>
+
+
+                    <img src="./images/map.png" style="margin-top:1em;margin-bottom: 1em;">
+            </div>
+            <button class="button-wide" id="main-button2" onclick="nameSlide()" disabled><b>Next</b></button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+        <div class="mySlides fade">
+            <h1 id="welcome">Welcome</h1>
+            <!-- <img src="./doods/green.svg" alt="d ood" id="welcomeDood" style="margin-top: 2em;"> -->
+            <div id="player_load" class="lottie"></div>
+
+
+            <p>Let’s begin by answering today’s mindful question!</p>
+
+            <div id="mindful_q_today" style="text-align: left;">
+                <p style="font-size: smaller"><b>Day 02 | 11 October 2021</b></p>
+                <h1>What do you like about yourself the most?</h1>
+                <textarea id="answer" name="answer" onkeyup="success2()"
+                    placeholder="Tap here to Type Your Answer...."></textarea>
+
+
+            </div>
+
+
+            <button class="button-wide" id="main-button3" onclick="finalSlide()" disabled><b>Submit</b></button>
+        </div>
+
+
+        <div class="mySlides fade">
+        <div id="mindful_q_today" style="text-align: left;">
+            <p style="font-size: smaller"><b>Day 02 | 11 October 2021</b></p>
+            <h1>What do you like about yourself the most?</h1>
+            <div id="answer_area">
+                <b><p id="player_name" style="font-size:larger ;"></p></b>
+                <p id="player_answer"></p>
+            </div>
+            <!-- <img src="./doods/green.svg" alt="dood" id="lastSlideDood" style="margin-top: 2em;"> -->
+            <div id="player_again" class="lottie" style="text-align: left;"></div>
+
+            <button class="button-wide" id="main-button4" style="background-color: #FF8C05; margin: 1em 0;" onclick="plusSlides(-1)"><b>Edit Your Answer</b></button>
+            <form method="get" action="./visualisation.html">
+            <button class="button-wide" id="main-button4" type="submit"><b>View Responses</b></button>
+        </form>
+        </div>
+    </div>
+
+        
+    </div>
+
+    
+
+
+
+    <br>
+
+
+
+
+    <div>
+        <!-- <button class="button-wide" id="main-button" onclick="plusSlides(1)"><b>Next</b></button> -->
+
+    </div>
+
+
+
+
+
+</body>
+<!-- <script src="script.js"></script> -->
+<script src="customisation.js"></script>
+
+</html>
