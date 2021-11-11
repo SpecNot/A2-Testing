@@ -155,6 +155,8 @@ function success2() {
 var player_again = document.getElementById('player_again');
 
 function finalSlide(){
+  button4 = document.getElementById('main-button4')
+  button4.style.backgroundColor = localStorage.getItem("code")
   playerAnswer =  document.getElementById("answer")
   localStorage.setItem("answer", playerAnswer.value)
   playerName = document.getElementById("player_name")

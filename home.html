@@ -8,21 +8,60 @@
     <title>Babbl</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="https://labs.nearpod.com/bodymovin/demo/markus/halloween/lt.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"
+        integrity="sha512-G1R66RZMhyLDEcAu92/Kv4sWNypnEiJcM6yhe0PNyiYDaMAKpMrJ6ZLR67xC/RMNGRa8Pm9TxtO8a98F6Ct+Gw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
-    <img src="./images/home-header.svg" style="height: 200px;">
 
-    <h1> this is the home page</h1>
+    <div class="header" style="height:50px">
+        <!-- <img src="./back.svg" alt="back" id="back-button" onclick="plusSlides(-1)"> -->
+
+        <img src="./logo.svg" alt="Logo" id="logo">
+    </div>
 
 
+    <br>
+    <div id="player_load" class="lottie"></div>
+    <h1 id="welcome">Welcome</h1>
 
+    <div id="main-home" class="contained" style="text-align: left;">
+
+
+        <p style="font-size: smaller"><b>Day 02 | 11 October 2021</b></p>
+        <h1>What do you like about yourself the most?</h1>
+
+        <!-- <img src="./doods/green.svg" alt="dood" id="lastSlideDood" style="margin-top: 2em;"> -->
+
+        <button class="button-wide" id="main-button4" style=" margin: 1em 0;" onclick="location.reload();"><b>View Responses</b></button>
+
+    </div>
+    <h1>Your Previous Answers</h1>
+
+    <div class="contained" style="text-align: left;">  
+        <p style="font-size: smaller"><b>Day 01 | 10 October 2021</b></p>
+        <h2 style="margin: 0;">Whats a healthy habit you want to strive for?</h2>
+    </div>
+    <div class="contained" style="text-align: left;">  
+        <p style="font-size: smaller"><b>Day 01 | 10 October 2021</b></p>
+        <h2 style="margin: 0;">Whats a healthy habit you want to strive for?</h2>
+    </div>
+    <div class="contained" style="text-align: left;">  
+        <p style="font-size: smaller"><b>Day 01 | 10 October 2021</b></p>
+        <h2 style="margin: 0;">Whats a healthy habit you want to strive for?</h2>
+    </div>
+
+    <!-- <h3>View More Previous Answers</h3> -->
 
 
 
 
 </body>
 <!-- <script src="script.js"></script> -->
-<script src="script.js"></script>
+<script src="home.js"></script>
 
 </html>

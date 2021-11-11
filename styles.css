@@ -6,6 +6,7 @@ h1 {
     margin: 0;
 }
 
+
 #logo {
     margin-top: 8px;
 }
@@ -227,7 +228,7 @@ img {
 @media (pointer:none),
 (pointer:coarse) {
 
-    
+
     .header {
         text-align: right;
 
@@ -264,30 +265,42 @@ img {
 
 
 }
-#line_1{
+
+#line_1 {
     height: 100px;
 }
-#line_2{
+
+#line_2 {
     height: 90px;
 }
-#line_3{
+
+#line_3 {
     height: 140px;
 }
-#line_4{
+
+#line_4 {
     height: 100px;
 }
-#caption{
+
+#caption {
     display: none;
-    position: absolute; 
+    position: absolute;
     z-index: 1;
     width: 92%;
     border-radius: 8px;
 
 
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+<<<<<<< HEAD
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .15);
     border: solid 2px #DADADA;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
+=======
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    /* background-color: rgba(255, 255, 255, .15); */
+    border: solid 2px #DADADA;
+    /* backdrop-filter: blur(10px); */
+>>>>>>> ca49291bb67339fef795d7ab03a8119acb7bd993
 
     overflow: hidden;
     background: inherit;
@@ -295,7 +308,7 @@ img {
     padding: 0 1em;
     opacity: 0;
     transition: all ease 1s;
-} 
+}
 
 
 #caption:before {
@@ -308,49 +321,53 @@ img {
     right: 0;
     bottom: 0;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
+    filter: blur(25px);
     margin: -20px;
-  }
-
-#players_canvas{
-/* position: ab; */
-width: 100%;
-height: 500px;
 }
 
-#player_2{
+#players_canvas {
+    /* position: ab; */
+    width: 100%;
+    height: 500px;
+}
+
+#player_2 {
     left: 15%;
 }
 
-#player_4{
+#player_4 {
     top: 10%;
     left: 25%;
 
 }
-#player_5{
+
+#player_5 {
     left: 3%;
 
 }
 
-#player_6{
+#player_6 {
     top: 15%;
     left: 17%;
 
 }
-#player_7{
+
+#player_7 {
     top: -220%;
     left: 32%;
 
 }
 
-#player_me{
+#player_me {
     left: 15%;
 }
-#pointer_left{
+
+#pointer_left {
     left: 15%;
     top: -80px;
 }
-#pointer_right{
+
+#pointer_right {
     left: 15%;
     top: -80px;
 }
@@ -364,6 +381,7 @@ height: 500px;
     bottom: 0;
     margin: auto;
 }
+
 .lottiev {
     max-width: 150px;
     display: inline-block;
@@ -449,10 +467,18 @@ input {
 }
 
 
-#answer_area{
+#answer_area {
     border: solid 2px #DADADA;
     border-radius: 4px;
     margin: 1em 0;
     padding: 0 1em;
 }
 
+
+.contained{
+    border: solid 2px #DADADA;
+    border-radius: 8px;
+    padding: 0.6em 0.6em;
+    color: black;
+    margin: 1em 0;
+}
