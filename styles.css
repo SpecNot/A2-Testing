@@ -291,10 +291,17 @@ img {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .15);
     border: solid 2px #DADADA;
     backdrop-filter: blur(25px);
+=======
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    /* background-color: rgba(255, 255, 255, .15); */
+    border: solid 2px #DADADA;
+    /* backdrop-filter: blur(10px); */
+>>>>>>> ca49291bb67339fef795d7ab03a8119acb7bd993
 =======
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     /* background-color: rgba(255, 255, 255, .15); */
