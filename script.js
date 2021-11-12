@@ -62,7 +62,7 @@ var lottie_loaded = bodymovin.loadAnimation({
   wrapper: lottie_load,
   animType: 'svg',
   loop: true,
-  path: './animation/loading.json',
+  path: './Loading.json',
 });
 
 
